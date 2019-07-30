@@ -16,7 +16,7 @@ app.post('/', function(req, res) {
     
     //console.log(req.body.city);
     let city  = req.body.city;
-    let apikey  = 'a63ca69aa78672a273fa81a6f6a26a95';
+    let apikey  = '#################################';
     let url     = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apikey}`;
     request(url, (err, response, body) => {
       if (err){
